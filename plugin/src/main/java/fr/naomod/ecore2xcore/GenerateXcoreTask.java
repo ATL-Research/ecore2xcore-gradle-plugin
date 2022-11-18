@@ -26,9 +26,6 @@ public abstract class GenerateXcoreTask extends DefaultTask {
         // only process .ecore files
         // TODO: have a configurable list of extension to process ?
         // TODO: log ignored files ?
-        for (File in : getSourceDir().getAsFileTree()) {
-            System.out.println(in.toPath());
-        }
         for (File in : getSourceDir().getAsFileTree().filter(f -> f.getName().endsWith(".ecore"))) {
             System.out.println("Processing " + in.getName());
             String targetName = in.getName().replace(".ecore", ".xcore");
