@@ -73,7 +73,7 @@ class Ecore2xcoreGradlePluginFunctionalTest {
         
         // Content is OK
         File expectedOutput = Files.createTempFile("xcore", "").toFile();
-        build("fr.atlResearch", getEcoreFile(), expectedOutput);
+        build("atl.research", getEcoreFile(), expectedOutput);
         String expectedContent = Files.readString(Path.of(expectedOutput.getAbsolutePath()));
 
         String contentXcore = Files.readString(Path.of(resultXcore.getAbsolutePath()));

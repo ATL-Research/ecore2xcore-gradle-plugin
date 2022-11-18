@@ -3,21 +3,9 @@
  */
 package fr.naomod.ecore2xcore;
 
-import org.gradle.api.Project;
-import org.gradle.api.file.Directory;
-import org.gradle.api.logging.Logger;
-import org.gradle.api.model.ObjectFactory;
-import org.gradle.api.provider.Provider;
-import org.gradle.api.tasks.TaskProvider;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.List;
-
 import org.gradle.api.Plugin;
+import org.gradle.api.Project;
+import org.gradle.api.logging.Logger;
 
 /**
  * A simple 'hello world' plugin.
@@ -38,7 +26,7 @@ public class Ecore2xcoreGradlePlugin implements Plugin<Project> {
             task.getSourceDir().convention(project.getLayout().getProjectDirectory().dir("models"));
             
             // basePackage
-            task.getBasePackage().convention("fr.atlResearch");
+            task.getBasePackage().convention("atl.research");
 
 
             // handle user override
