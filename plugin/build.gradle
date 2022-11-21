@@ -26,14 +26,14 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }
 
-group = 'fr.naomod.ecore2xcore'
+group = 'io.github.ATL-Research.ecore2xcore'
 version = '1.0'
 
 gradlePlugin {
     // Define the plugin
     plugins {
         greeting {
-            id = 'fr.naomod.ecore2xcore'
+            id = 'io.github.ATL-Research.ecore2xcore'
             displayName = 'Ecore to Xcore generator'
             description = 'This plugin generates xcore metamodels from ecore metamodels'
             implementationClass = 'fr.naomod.ecore2xcore.Ecore2xcoreGradlePlugin'
