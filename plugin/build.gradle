@@ -26,7 +26,7 @@ dependencies {
 }
 
 group = 'io.github.ATL-Research.ecore2xcore'
-version = '1.0'
+version = '1.0.1'
 
 gradlePlugin {
     // Define the plugin

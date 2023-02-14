@@ -10,7 +10,7 @@ Add the plugin to your `build.gradle` file:
 plugins {
     // your others plugins
 
-    id 'fr.naomod.ecore2xcore' version '1.0'
+    id 'fr.naomod.ecore2xcore' version '1.0.1'
 
 }
 ```
