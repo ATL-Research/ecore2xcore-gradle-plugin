@@ -39,4 +39,4 @@ jobs:
     - name: Publish to Gradle Plugin
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
-        arguments: publishPlugin -Pgradle.publish.key=${{ secret.GRADLE_PLUGIN_KEY }} -Pgradle.publish.secret=${{ secret.GRADLE_PLUGIN_SECRET }}
+        arguments: publishPlugin -Pgradle.publish.key=${{ secrets.GRADLE_PLUGIN_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PLUGIN_SECRET }}
