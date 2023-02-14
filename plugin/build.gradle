@@ -31,20 +31,17 @@ version = '1.0'
 
 gradlePlugin {
     // Define the plugin
+    website = 'https://github.com/ATL-Research/ecore2xcore-gradle-plugin'
+    vcsUrl = 'https://github.com/ATL-Research/ecore2xcore-gradle-plugin'
     plugins {
         greeting {
             id = 'io.github.ATL-Research.ecore2xcore'
             displayName = 'Ecore to Xcore generator'
             description = 'This plugin generates xcore metamodels from ecore metamodels'
             implementationClass = 'fr.naomod.ecore2xcore.Ecore2xcoreGradlePlugin'
+            tags.set(['ecore', 'xcore', 'emf'])
         }
     }
-}
-
-pluginBundle {
-    website = 'https://github.com/ATL-Research/ecore2xcore-gradle-plugin'
-    vcsUrl = 'https://github.com/ATL-Research/ecore2xcore-gradle-plugin'
-    tags = ['ecore', 'xcore', 'emf']
 }
 
 // Add a source set for the functional test suite

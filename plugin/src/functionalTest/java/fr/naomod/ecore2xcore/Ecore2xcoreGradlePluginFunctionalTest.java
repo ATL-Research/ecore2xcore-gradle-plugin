@@ -47,7 +47,7 @@ class Ecore2xcoreGradlePluginFunctionalTest {
         writeString(getSettingsFile(), "");
         writeString(getBuildFile(),
             "plugins {" +
-            "  id('fr.naomod.ecore2xcore')" +
+            "  id('io.github.ATL-Research.ecore2xcore')" +
             "}");
         writeString(getEcoreFile(),
             "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + 

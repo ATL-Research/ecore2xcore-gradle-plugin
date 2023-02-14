@@ -15,7 +15,7 @@ class Ecore2xcoreGradlePluginTest {
     @Test void pluginRegistersATask() {
         // Create a test project and apply the plugin
         Project project = ProjectBuilder.builder().build();
-        project.getPlugins().apply("fr.naomod.ecore2xcore");
+        project.getPlugins().apply("io.github.ATL-Research.ecore2xcore");
 
         // Verify the result
         assertNotNull(project.getTasks().findByName("generateXcore"));
