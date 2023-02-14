@@ -23,7 +23,7 @@ dependencies {
     implementation 'org.eclipse.emf:org.eclipse.emf.ecore.xcore.lib:+'
 
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
 
 group = 'io.github.ATL-Research.ecore2xcore'
