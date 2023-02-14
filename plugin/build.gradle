@@ -19,8 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.eclipse.xtext:org.eclipse.xtext:2.25.0"
-    implementation 'org.eclipse.emf:org.eclipse.emf.ecore.xcore.lib:+'
+    implementation 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.17.0'
 
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
